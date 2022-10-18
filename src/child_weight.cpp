@@ -161,6 +161,7 @@ NumericVector normales = ifelse(bmiCat == 2, 1.0, 0.0);
 NumericVector over = ifelse(bmiCat == 3, 1.0, 0.0);
 NumericVector obese = ifelse(bmiCat == 4, 1.0, 0.0);
 
+  // sex = 1 if female; sex = 0 if male
 NumericMatrix ffm_ref(17,nind);
 ffm_ref(0,_)   = 10.134*(1-sex)+9.477*sex;       // 2 years old
 ffm_ref(1,_)   = 12.099*(1 - sex) + 11.494*sex;    // 3 years old
